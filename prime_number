@@ -1,3 +1,4 @@
+//first method
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -24,3 +25,54 @@ int main()
    }
    return 0;
 }
+//second method
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n,i,f=0;
+	cout<<"enter a number";
+	cin>>n;
+	for(i=2;i<=(n/2);i++)
+	{
+	if(n%i==0)
+	{
+		f=1;
+		cout<<"not prime";
+		break;
+		}	
+	}
+	if(f==0)
+	{
+		cout<<"prime";
+	}
+	return 0;
+	
+}
+//third method
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n,i,f=0;
+	cout<<"enter a number";
+	cin>>n;
+	for(i=2;i<=(sqrt(n));i++)
+	{
+	if(n%i==0)
+	{
+		f=1;
+		cout<<"not prime";
+		break;
+		}	
+	}
+	if(f==0)
+	{
+		cout<<"prime";
+	}
+	return 0;
+	
+}
+
